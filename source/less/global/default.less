@@ -18,7 +18,7 @@ html {
 body {
   font-family: 'Lato', sans-serif;
   .fontTextMobile();
-  color: var(--colorBlack);
+  color: var(--colorBlack2);
 
   @media (min-width: @tabletWidth) {
     .fontTextTablet();
@@ -97,3 +97,79 @@ figure {
 
 /* Bootstrap */
 
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+.small {
+  .fontSmallMobile();
+
+  @media (min-width: @tabletWidth) {
+    .fontSmallTablet();
+  }
+
+  @media (min-width: @desktopWidth) {
+    .fontSmallDesktop();
+  }
+}
+
+.container {
+  padding: 80px 120px;
+}
+
+.navbar-inverse {
+  border: none;
+  background-color: var(--colorBlack3);
+  opacity: 0.9;
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border-color: var(--colorWhite2);
+}
+
+.navbar-nav {
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.img-circle {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+
+  border: 10px solid transparent;
+  opacity: 0.7;
+  filter: grayscale(100%);
+
+  &:hover {
+    border-color: var(--colorGrey);
+    transform: scale(1.02);
+  }
+}
+
+.carousel {
+
+  & img {
+    width: 100%;
+    height: auto;
+
+    filter: grayscale(100%);
+  }
+}
+
+.carousel-caption {
+  display: none;
+
+  color: var(--colorWhite2);
+
+  @media (min-width: @tabletWidth) {
+    display: block;
+  }
+}
