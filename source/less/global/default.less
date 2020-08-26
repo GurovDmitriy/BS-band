@@ -86,6 +86,10 @@ button:focus:not(:focus-visible) {
   top: 0;
 }
 
+a {
+  color: inherit;
+}
+
 a:hover {
   cursor: pointer;
 }
@@ -98,13 +102,29 @@ figure {
 /* Bootstrap */
 
 h2 {
+  .fontH2Mobile();
   text-transform: uppercase;
   letter-spacing: 10px;
+
+  @media (min-width: @tabletWidth) {
+    .fontH2Tablet();
+  }
+
+  @media (min-width: @desktopWidth) {
+    .fontH2Desktop();
+  }
 }
 
 h3 {
-  text-transform: uppercase;
-  letter-spacing: 8px;
+  .fontH3Tablet();
+
+  @media (min-width: @tabletWidth) {
+    .fontH3Tablet();
+  }
+
+  @media (min-width: @desktopWidth) {
+    .fontH3Desktop();
+  }
 }
 
 .small {
@@ -172,4 +192,9 @@ h3 {
   @media (min-width: @tabletWidth) {
     display: block;
   }
+}
+
+section:nth-child(2) {
+  color: var(--colorWhite2);
+  background-color: var(--colorBlack3);
 }
