@@ -39,6 +39,24 @@
 /* параметры текста mibile */
 /* параметры текста tablet */
 /* параметры текста desktop */
+/*Navigation*/
+/*только для скринридера*/
+/*настройки кастомного фокуса*/
+/*сслыка пропуска меню*/
+/*Bootstrap*/
+/*Caption*/
+/*Base tag*/
+/*Container*/
+/*Col*/
+/*Btn*/
+/*Nav*/
+/*Small text*/
+/*List-group*/
+/*Form*/
+/*Tab*/
+/*Img face gallery*/
+/*Carusel*/
+/*Modal*/
 html,
 body {
   margin: 0;
@@ -201,18 +219,6 @@ h3:last-child {
     line-height: 45px;
   }
 }
-h4 {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-h4:last-child {
-  margin-bottom: 0;
-}
-@media (min-width: 768px) {
-  h4 {
-    margin-bottom: 20px;
-  }
-}
 /*Base tag*/
 p {
   margin-bottom: 20px;
@@ -263,13 +269,13 @@ footer img {
   }
 }
 .container-fluid {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media (min-width: 768px) {
   .container-fluid {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 @media (min-width: 1320px) {
