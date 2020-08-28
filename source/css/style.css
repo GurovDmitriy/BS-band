@@ -213,6 +213,7 @@ h4:last-child {
     margin-bottom: 20px;
   }
 }
+/*Base tag*/
 p {
   margin-bottom: 20px;
 }
@@ -246,6 +247,7 @@ footer img {
   width: 100%;
   height: auto;
 }
+/*Container*/
 .container {
   padding: 40px 15px;
 }
@@ -276,6 +278,7 @@ footer img {
     padding-right: 80px;
   }
 }
+/*Col*/
 .col-sm-4,
 .col-sm-6,
 .col-sm-8 {
@@ -293,6 +296,7 @@ footer img {
     margin-bottom: 30px;
   }
 }
+/*Btn*/
 .btn {
   border: none;
   border-radius: 0;
@@ -313,6 +317,7 @@ footer img {
 .btn-default:active {
   transform: scale(0.9);
 }
+/*Nav*/
 .navbar-inverse {
   border: none;
   background-color: var(--colorBlack3);
@@ -332,6 +337,7 @@ footer img {
   text-transform: uppercase;
   letter-spacing: 6px;
 }
+/*Small text*/
 .small {
   font-size: 13px;
   line-height: 21px;
@@ -348,6 +354,7 @@ footer img {
     line-height: 32px;
   }
 }
+/*List-group*/
 .list-group {
   margin-bottom: 20px;
 }
@@ -368,6 +375,7 @@ footer img {
 .badge {
   color: var(--colorWhite2);
 }
+/*Form*/
 .form-group {
   margin-bottom: 20px;
 }
@@ -386,6 +394,7 @@ footer img {
   border: none;
   box-shadow: none;
 }
+/*Tab*/
 .tab-content {
   padding-top: 10px;
 }
@@ -394,6 +403,7 @@ footer img {
     margin-bottom: 20px;
   }
 }
+/*Img face gallery*/
 .img-circle {
   width: 80%;
   height: 80%;
@@ -408,6 +418,7 @@ footer img {
   border-color: var(--colorGrey);
   transform: scale(1.02);
 }
+/*Carusel*/
 .carousel img {
   width: 100%;
   height: auto;
@@ -423,6 +434,7 @@ footer img {
     padding-bottom: 60px;
   }
 }
+/*Modal*/
 .modal a:hover {
   color: var(--colorBlack3);
 }
