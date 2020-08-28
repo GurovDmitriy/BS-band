@@ -94,7 +94,7 @@ button:focus:not(:focus-visible) {
   outline: none;
 }
 .js-focus-visible .focus-visible {
-  outline: 2px solid var(--colorBlack);
+  outline: 2px solid var(--colorGrey2);
 }
 .js-focus-visible button.focus-visible {
   outline-offset: 2px;
@@ -106,8 +106,8 @@ button:focus:not(:focus-visible) {
   left: 0;
   z-index: 100;
   padding: 10px;
-  color: var(--colorBlack);
-  background-color: var(--colorWhite);
+  color: var(--colorWhite2);
+  background-color: var(--colorBlack3);
 }
 .skip-link:focus {
   top: 0;
@@ -118,6 +118,9 @@ a {
 a:hover {
   color: inherit;
   cursor: pointer;
+}
+a:focus {
+  color: inherit;
 }
 figure {
   margin: 0;
@@ -207,6 +210,9 @@ p {
 p:last-child {
   margin-bottom: 0;
 }
+figure a {
+  display: block;
+}
 figure img {
   margin-left: auto;
   margin-right: auto;
@@ -243,6 +249,10 @@ footer img {
   color: var(--colorGrey2);
   background-color: var(--colorWhite2);
 }
+.btn-default:focus {
+  color: var(--colorWhite2);
+  background-color: var(--colorGrey2);
+}
 .btn-default:active {
   transform: scale(0.9);
 }
@@ -254,6 +264,12 @@ footer img {
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
   border-color: var(--colorWhite2);
+}
+.navbar-inverse .navbar-header .skip-link {
+  color: var(--colorWhite2);
+}
+.navbar-inverse .navbar-brand {
+  text-transform: uppercase;
 }
 .navbar-nav {
   text-transform: uppercase;
@@ -374,5 +390,5 @@ footer img {
   margin-right: 10px;
 }
 .usr-contacts a:focus {
-  color: var(--colorGrey2);
+  color: var(--colorBlack2);
 }

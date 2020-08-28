@@ -62,7 +62,7 @@ button:focus:not(:focus-visible) {
 }
 
 .js-focus-visible .focus-visible {
-  .focusCustom(var(--colorBlack));
+  .focusCustom(var(--colorGrey2));
 }
 
 .js-focus-visible button.focus-visible {
@@ -79,9 +79,9 @@ button:focus:not(:focus-visible) {
 
   padding: 10px;
 
-  color: var(--colorBlack);
+  color: var(--colorWhite2);
 
-  background-color: var(--colorWhite);
+  background-color: var(--colorBlack3);
 }
 
 .skip-link:focus {
@@ -94,6 +94,10 @@ a {
   &:hover {
     color: inherit;
     cursor: pointer;
+  }
+
+  &:focus {
+    color: inherit;
   }
 }
 
@@ -188,6 +192,10 @@ p {
   }
 }
 
+figure a {
+  display: block;
+}
+
 figure img {
   margin-left: auto;
   margin-right: auto;
@@ -233,6 +241,11 @@ footer img {
     background-color: var(--colorWhite2);
   }
 
+  &:focus {
+    color: var(--colorWhite2);
+    background-color: var(--colorGrey2);
+  }
+
   &:active {
     transform: scale(0.9);
   }
@@ -247,6 +260,14 @@ footer img {
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
   border-color: var(--colorWhite2);
+}
+
+.navbar-inverse .navbar-header .skip-link {
+  color: var(--colorWhite2);
+}
+
+.navbar-inverse .navbar-brand {
+  text-transform: uppercase;
 }
 
 .navbar-nav {
