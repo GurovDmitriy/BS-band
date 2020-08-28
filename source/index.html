@@ -7,22 +7,25 @@
 
   <meta name="viewport"                 content="width=device-width, initial-scale=1.0">
 
-  <meta name="description"              content="">
-  <meta name="keywords"                 content="">
-  <meta name="author"                   content="Гуров               Дмитрий">
+  <meta name="description"              content="Bootstrap 3 site - Band">
+  <meta name="keywords"                 content="bootstrap, template, band, music, concert">
+  <meta name="author"                   content="Гуров Дмитрий">
   <meta name="robots"                   content="">
   <meta name="googlebot"                content="">
   <meta name="google-site-verification" content="">
 
-  <link rel="preload" href="fonts/woff2/Lato-Regular.woff2" as="font"    type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/woff2/Lato-Bold.woff2"    as="font"    type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/woff2/Lato-Italic.woff2"  as="font"    type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/woff2/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/woff2/Lato-Bold.woff2"    as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/woff2/Lato-Italic.woff2"  as="font" type="font/woff2" crossorigin>
 
-  <link rel="preload" href="css/style.css"                  as="style">
+  <link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" as="style">
+  <link rel="preload" href="css/style.css"                                                         as="style">
 
-  <link rel="preload" href="js/modernizr-custom.js"         as="script">
-  <link rel="preload" href="js/picturefill.js"              as="script">
-  <link rel="preload" href="js/lazysizes.js"                as="script">
+  <link rel="preload" href="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"    as="script">
+  <link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" as="script">
+  <link rel="preload" href="js/modernizr-custom.js"                                              as="script">
+  <link rel="preload" href="js/picturefill.js"                                                   as="script">
+  <link rel="preload" href="js/lazysizes.js"                                                     as="script">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
@@ -66,7 +69,9 @@
     <h1 class="sr-only">The Band - music group</h1>
 
     <!-- -Main navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+
+      <h2 class="sr-only">Main navigation</h2>
 
       <div class="container-fluid">
 
@@ -105,6 +110,8 @@
     <!-- -Slider -->
     <div class="carousel slide" id="slider" data-ride="carousel">
 
+      <h2 class="sr-only">Slider concert</h2>
+
       <!-- -slide-indicator -->
       <ol class="carousel-indicators">
         <li data-target="#slider" data-slide-to="0" class="active"></li>
@@ -113,7 +120,7 @@
       </ol>
 
       <!-- -slide-inner -->
-      <div class="carousel-inner" role="listbox">
+      <div class="carousel-inner">
         <div class="item active">
           <picture>
             <source type="image/webp"
@@ -280,7 +287,7 @@
       <div class="container text-center">
 
         <h2 tabindex="0">The band</h2>
-        <p class=""><em>We love music!</em></p>
+        <p><em>We love music!</em></p>
 
         <p class="">And mobilize emerging dynamic, paradigm benefit corporation replicable, incubator indicators. Inclusive scalable inspiring outcomes venture philanthropy movements technology. Global then human-centered, shared unit of analysis inspirational sustainable. Think tank, inclusive inspire grit fairness green space circular social return on investment. Relief, compassion framework, cultivate paradigm changemaker ecosystem, granular, because. Capacity building vibrant indicators, co-create our work the resistance. Social return on investment issue outcomes do-gooder movements to. Compelling, or shine.</p>
 
@@ -463,8 +470,8 @@
         <p>Compelling natural resources co-create impact inspire transparent. Thought provoking think.</p>
 
         <ul class="list-group text-left">
-          <li class="list-group-item">September <span class="label label-danger">Sold Out!</span></li>
-          <li class="list-group-item">October <span class="label label-danger">Sold Out!</span></li>
+          <li class="list-group-item">September <span class="label label-default">Sold Out!</span></li>
+          <li class="list-group-item">October <span class="label label-default">Sold Out!</span></li>
           <li class="list-group-item">November <span class="badge">3</span></li>
         </ul>
 
@@ -622,7 +629,7 @@
         <!-- Gallery tour end -->
 
         <!-- -Modal -->
-        <div class="modal fade" id="modal" role="dialog">
+        <div class="modal fade" id="modal" role="dialog" aria-label="Popup buy ticket">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
