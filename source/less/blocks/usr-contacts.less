@@ -1,0 +1,30 @@
+.usr-contacts .glyphicon {
+  transition: transform 0.2s;
+}
+
+.usr-contacts address,
+.usr-contacts p:not(:first-child) {
+  transition: color 0.2s;
+
+  &:hover {
+    color: var(--colorGrey2);
+  }
+
+  &:hover .glyphicon {
+    transform: scale(1.1);
+  }
+
+  &:active .glyphicon {
+    transform: scale(1);
+  }
+}
+
+.usr-contacts .glyphicon {
+  margin-right: 10px;
+}
+
+.usr-contacts a {
+  &:focus {
+    color: var(--colorGrey2);
+  }
+}

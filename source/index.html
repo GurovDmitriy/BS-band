@@ -68,8 +68,6 @@
     <!-- -Main navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 
-      <a class="skip-link" href="#usr-main">Skip link</a>
-
       <div class="container-fluid">
 
         <div class="navbar-header">
@@ -80,6 +78,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#">Logo</a>
+          <a class="skip-link" href="#usr-main">Skip link</a>
         </div>
 
         <div class="collapse navbar-collapse" id="nav">
@@ -627,7 +626,7 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <button class="close" data-dismiss="modal" type="button">&times;</button>
+                <button class="close glyphicon glyphicon-remove" data-dismiss="modal" type="button"><span class="sr-only">Close</span></button>
                 <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
               </div>
               <div class="modal-body text-left">
@@ -644,7 +643,7 @@
                 </form>
               </div>
               <div class="modal-footer">
-                <button class="btn btn-default pull-left" type="button" data-dismiss="modal">Cansel <span class="close">&times;</span></button>
+                <button class="btn btn-default pull-left" type="button" data-dismiss="modal">Cansel <span class="glyphicon glyphicon-remove"></span></button>
                 <p>Need <a href="#">help?</a></p>
               </div>
             </div>
@@ -665,9 +664,9 @@
         <div class="row">
 
           <!-- -Contacts -->
-          <div class="col-sm-4 small">
+          <div class="col-sm-4 usr-contacts">
             <p>Fan? Drop a note.</p>
-            <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+            <p><address><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</address></p>
             <p><span class="glyphicon glyphicon-phone"></span><a href="tel:"> Phone: +00 1515151515</a></p>
             <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:"> Email: mail@mail.com</a></p>
           </div>

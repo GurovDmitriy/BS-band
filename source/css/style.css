@@ -116,23 +116,17 @@ a {
   color: inherit;
 }
 a:hover {
+  color: inherit;
   cursor: pointer;
 }
 figure {
   margin: 0;
   padding: 0;
 }
+textarea {
+  resize: vertical;
+}
 /*Bootstrap*/
-/*Navigation*/
-/*Headers*/
-/*Small*/
-/*Container*/
-/*Navigation*/
-/*Img-circle*/
-/*Carusel*/
-/*Section*/
-/*Footer*/
-/*Headers*/
 h1 {
   margin-top: 0;
   margin-bottom: 10px;
@@ -213,7 +207,58 @@ p {
 p:last-child {
   margin-bottom: 0;
 }
-/*Small*/
+figure img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+section:nth-child(2),
+footer {
+  color: var(--colorWhite2);
+  background-color: var(--colorBlack3);
+}
+footer img {
+  width: 100%;
+  height: auto;
+}
+.container {
+  padding: 40px 15px;
+}
+.col-sm-4 {
+  margin-bottom: 20px;
+}
+.col-sm-4:last-child {
+  margin-bottom: 0;
+}
+.btn {
+  border: none;
+  border-radius: 0;
+  transition: background-color 0.2s, color 0.2s;
+}
+.btn-default {
+  color: var(--colorWhite2);
+  background-color: var(--colorGrey2);
+}
+.btn-default:hover {
+  color: var(--colorGrey2);
+  background-color: var(--colorWhite2);
+}
+.btn-default:active {
+  transform: scale(0.9);
+}
+.navbar-inverse {
+  border: none;
+  background-color: var(--colorBlack3);
+  opacity: 0.9;
+}
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border-color: var(--colorWhite2);
+}
+.navbar-nav {
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
 .small {
   font-size: 13px;
   line-height: 21px;
@@ -230,38 +275,20 @@ p:last-child {
     line-height: 32px;
   }
 }
-.col-sm-4 {
-  margin-bottom: 20px;
-}
-.col-sm-4:last-child {
-  margin-bottom: 0;
-}
 .list-group {
   margin-bottom: 20px;
 }
 .list-group:last-child {
   margin-bottom: 0;
 }
-figure img {
-  margin-bottom: 20px;
-}
-/*Container*/
-.container {
-  padding: 40px 15px;
-}
-/*Navigation*/
-.navbar-inverse {
-  border: none;
+.list-group-item {
+  color: var(--colorWhite2);
   background-color: var(--colorBlack3);
-  opacity: 0.9;
-}
-.navbar-inverse .navbar-collapse,
-.navbar-inverse .navbar-form {
   border-color: var(--colorWhite2);
 }
-.navbar-nav {
-  text-transform: uppercase;
-  letter-spacing: 6px;
+.label,
+.badge {
+  color: var(--colorWhite2);
 }
 .form-group {
   margin-bottom: 20px;
@@ -269,10 +296,16 @@ figure img {
 .form-group:last-child {
   margin-bottom: 0;
 }
+.form-control {
+  border-radius: 0;
+}
+.form-control:focus {
+  border: none;
+  box-shadow: none;
+}
 .tab-content {
   padding-top: 10px;
 }
-/*Img-circle*/
 .img-circle {
   width: 80%;
   height: 80%;
@@ -281,12 +314,12 @@ figure img {
   border: 10px solid transparent;
   opacity: 0.7;
   filter: grayscale(100%);
+  transition: border-color 0.2s, transform 0.2s;
 }
 .img-circle:hover {
   border-color: var(--colorGrey);
   transform: scale(1.02);
 }
-/*Carusel*/
 .carousel img {
   width: 100%;
   height: auto;
@@ -301,17 +334,45 @@ figure img {
     display: block;
   }
 }
-/*Section*/
-section:nth-child(2) {
+.modal a:hover {
+  color: var(--colorBlack3);
+}
+.modal-content {
+  border-radius: 0;
+}
+.modal-header {
   color: var(--colorWhite2);
   background-color: var(--colorBlack3);
 }
-/*List-group*/
-.list-group {
-  color: var(--colorBlack3);
+.modal-header .glyphicon {
+  color: var(--colorWhite2);
+  transition: color 0.2s;
 }
-/*Footer*/
-footer img {
-  width: 100%;
-  height: auto;
+.modal-header .glyphicon:hover {
+  color: var(--colorGrey);
+}
+.usr-contacts .glyphicon {
+  transition: transform 0.2s;
+}
+.usr-contacts address,
+.usr-contacts p:not(:first-child) {
+  transition: color 0.2s;
+}
+.usr-contacts address:hover,
+.usr-contacts p:not(:first-child):hover {
+  color: var(--colorGrey2);
+}
+.usr-contacts address:hover .glyphicon,
+.usr-contacts p:not(:first-child):hover .glyphicon {
+  transform: scale(1.1);
+}
+.usr-contacts address:active .glyphicon,
+.usr-contacts p:not(:first-child):active .glyphicon {
+  transform: scale(1);
+}
+.usr-contacts .glyphicon {
+  margin-right: 10px;
+}
+.usr-contacts a:focus {
+  color: var(--colorGrey2);
 }
