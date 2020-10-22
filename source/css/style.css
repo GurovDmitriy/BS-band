@@ -1,20 +1,23 @@
 @font-face {
   font-family: 'Lato';
-  src: url('../fonts/woff2/Lato-Regular.woff2') format('woff2');
+  src: url('../font/woff2/Lato-Regular.woff2') format('woff2');
+  src: url('../font/woff/Lato-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Lato';
-  src: url('../fonts/woff2/Lato-Bold.woff2') format('woff2');
+  src: url('../font/woff2/Lato-Bold.woff2') format('woff2');
+  src: url('../font/woff/Lato-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Lato';
-  src: url('../fonts/woff2/Lato-Italic.woff2') format('woff2');
+  src: url('../font/woff2/Lato-Italic.woff2') format('woff2');
+  src: url('../font/woff/Lato-Italic.woff') format('woff');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -63,13 +66,15 @@ body {
   padding: 0;
 }
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   scroll-behavior: smooth;
 }
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 body {
   min-width: 280px;
@@ -306,6 +311,7 @@ footer img {
 .btn {
   border: 2px sold transparent;
   border-radius: 0;
+  -webkit-transition: background-color 0.2s, color 0.2s;
   transition: background-color 0.2s, color 0.2s;
 }
 .btn-default {
@@ -322,7 +328,8 @@ footer img {
   background-color: var(--colorWhite2);
 }
 .btn-default:active {
-  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 /*Nav*/
 .navbar-inverse {
@@ -400,7 +407,8 @@ footer img {
 }
 .form-control:focus {
   border: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 /*Tab*/
 .tab-content {
@@ -419,18 +427,24 @@ footer img {
   margin-right: auto;
   border: 10px solid transparent;
   opacity: 0.7;
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: border-color 0.2s, -webkit-transform 0.2s;
+  transition: border-color 0.2s, -webkit-transform 0.2s;
   transition: border-color 0.2s, transform 0.2s;
+  transition: border-color 0.2s, transform 0.2s, -webkit-transform 0.2s;
 }
 .img-circle:hover {
   border-color: var(--colorGrey);
-  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 /*Carusel*/
 .carousel img {
   width: 100%;
   height: auto;
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 .carousel-caption {
   display: none;
@@ -455,16 +469,21 @@ footer img {
 }
 .modal-header .glyphicon {
   color: var(--colorWhite2);
+  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 .modal-header .glyphicon:hover {
   color: var(--colorGrey);
 }
 .usr-contacts .glyphicon {
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 .usr-contacts address,
 .usr-contacts p:not(:first-child) {
+  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 .usr-contacts address:hover,
@@ -473,11 +492,13 @@ footer img {
 }
 .usr-contacts address:hover .glyphicon,
 .usr-contacts p:not(:first-child):hover .glyphicon {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .usr-contacts address:active .glyphicon,
 .usr-contacts p:not(:first-child):active .glyphicon {
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 .usr-contacts .glyphicon {
   margin-right: 10px;
@@ -485,3 +506,4 @@ footer img {
 .usr-contacts a:focus {
   color: var(--colorBlack2);
 }
+/*# sourceMappingURL=/css/style.css.map */
